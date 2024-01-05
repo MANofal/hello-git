@@ -1,0 +1,3 @@
+git diff -> return changes happened before add
+
+git diff --cached أو git diff --staged -> both return changes happened between add and commit (when u are in the staged area)
