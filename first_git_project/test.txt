@@ -1,3 +1,9 @@
 git diff -> return changes happened before add
-
 git diff --cached أو git diff --staged -> both return changes happened between add and commit (when u are in the staged area)
+
+git rm filename -> remove the file if it is in unmodifable(repo) stage(i made commit and didn't make add after it)
+git rm --cached filename -> move the file from staged to untrackable stage
+git rm -f filename -> force to remove the file even if it was in the staged area
+
+git restore --staged filename -> return the file to the staged area
+git restore filename -> run it after above line and the file will be restored to the unmodifable stage
