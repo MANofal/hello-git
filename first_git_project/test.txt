@@ -7,3 +7,7 @@ git rm -f filename -> force to remove the file even if it was in the staged area
 
 git restore --staged filename -> return the file to the staged area
 git restore filename -> run it after above line and the file will be restored to the unmodifable stage
+
+git mv oldFileName newFileName  -> to rename the file and make git track the sae file after changing its name 
+				   note:(if we renamed it outside git and then added it git will think you removed the old file and make a new file with the new name)
+git mv currentpath\filename newpath\file name -> will move the file to new path and track it's the same file
